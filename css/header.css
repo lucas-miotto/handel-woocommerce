@@ -111,6 +111,7 @@
 }
 
 @media (max-width: 800px) {
+	/* para funcionar bem no mobile */
 	.menu-categorias {
 		position: relative;
 		overflow-x: auto;
