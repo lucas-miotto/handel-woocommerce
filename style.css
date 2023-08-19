@@ -4,5 +4,6 @@ Theme name: Handel WooCommerce
 
 @import "./css/base.css";
 @import "./css/header.css";
-@import "./css/home.css";
 @import "./css/slide.css";
+@import "./css/home.css";
+@import "./css/products.css";
