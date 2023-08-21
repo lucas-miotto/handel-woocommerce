@@ -44,5 +44,5 @@ function handel_product_list($products)
     <?php } ?>
   </ul>
 <?php
-} // Fecha a função handel
+}
 ?>
