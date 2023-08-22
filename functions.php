@@ -17,7 +17,6 @@ function handel_custom_images()
   add_image_size('slide', 1000, 800, ['center', 'top']);
   update_option('medium_crop', 1);
 }
-
 add_action('after_setup_theme', 'handel_custom_images');
 
 function handel_loop_shop_per_page()
@@ -25,6 +24,20 @@ function handel_loop_shop_per_page()
   return 6;
 }
 add_filter('loop_shop_per_page', 'handel_loop_shop_per_page');
+
+function format_products($products, $img_size = 'medium')
+{
+  $products_final = [];
+  foreach ($products as $product) {
+    $products_final[] = [
+      'name' => $product->get_name(),
+      'price' => $product->get_price_html(),
+      'link' => $product->get_permalink(),
+      'img' => wp_get_attachment_image_src($product->get_image_id(), $img_size)[0],
+    ];
+  }
+  return $products_final;
+}
 
 function handel_product_list($products)
 { ?>

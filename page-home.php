@@ -1,23 +1,6 @@
 <?php
 /* Template Name: Home */
-
 get_header();
-?>
-
-<?php
-function format_products($products, $img_size)
-{
-	$products_final = [];
-	foreach ($products as $product) {
-		$products_final[] = [
-			'name' => $product->get_name(),
-			'price' => $product->get_price_html(),
-			'link' => $product->get_permalink(),
-			'img' => wp_get_attachment_image_src($product->get_image_id(), $img_size)[0],
-		];
-	}
-	return $products_final;
-}
 
 $products_slide = wc_get_products([
 	'limit' => 6,
@@ -109,7 +92,5 @@ $data['categorias'][$categoria_direita] = get_product_category_data($categoria_d
 
 <?php endwhile;
 endif; ?>
-
-
 
 <?php get_footer(); ?>
