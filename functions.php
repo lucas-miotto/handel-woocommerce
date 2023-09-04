@@ -71,4 +71,5 @@ function handel_product_list($products)
   </ul>
 <?php
 }
-?>
+
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
