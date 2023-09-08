@@ -248,3 +248,7 @@
 	color: #fff;
 	background: #1188ee;
 }
+
+.woocommerce-orders-table__cell-order-actions a {
+	margin: 5px !important;
+}

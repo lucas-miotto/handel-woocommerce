@@ -103,6 +103,10 @@
 	margin-bottom: 40px;
 }
 
+.filtro .woocommerce a {
+	text-decoration: none;
+}
+
 .filtro-titulo,
 .filtro .widget h2 {
 	font-size: 1.125rem;

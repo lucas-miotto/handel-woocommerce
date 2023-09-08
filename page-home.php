@@ -86,7 +86,7 @@ $data['categorias'][$categoria_direita] = get_product_category_data($categoria_d
 		</section>
 
 		<section class="container">
-			<h1 class="subtitulo">Vendidos</h1>
+			<h1 class="subtitulo">Mais Vendidos</h1>
 			<?php handel_product_list($data['vendidos']); ?>
 		</section>
 

@@ -35,7 +35,6 @@ function format_single_product($id, $img_size = 'medium')
   <?php wc_print_notices(); ?>
 </div>
 
-
 <main class="container product">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php $produto = format_single_product(get_the_ID()); ?>
